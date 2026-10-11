@@ -8,7 +8,7 @@ MSC is a coarse-grained stochastic model of RNA-granule transport, synaptic enco
 
 ![MSC model overview](docs/msc_model_overview.png)
 
-*Conceptual framework and stochastic update cycle of the MSC model (Figure 1 of the preprint).*
+*Conceptual framework and stochastic update cycle of the MSC model.*
 
 ![MSC model schematic: activity opens a capture window, material match selects which granules dock, productive capture feeds back on material memory](docs/msc_schematic.png)
 
