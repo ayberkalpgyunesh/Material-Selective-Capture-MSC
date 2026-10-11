@@ -6,6 +6,12 @@ Code for the preprint
 
 MSC is a coarse-grained stochastic model of RNA-granule transport, synaptic encounter, physical docking, productive capture and delayed postsynaptic reinforcement. Docking depends on an activity tag, a slow material-memory tag and the material mismatch between granule and postsynaptic density.
 
+![MSC model overview](docs/msc_model_overview.png)
+
+*Conceptual framework and stochastic update cycle of the MSC model (Figure 1 of the preprint).*
+
+![MSC model schematic: activity opens a capture window, material match selects which granules dock, productive capture feeds back on material memory](docs/msc_schematic.png)
+
 All results are in-silico predictions. Nothing in this repository is a wet-lab measurement.
 
 ## Repository layout
@@ -15,7 +21,8 @@ model/
   msc_model_feedback.py       the simulator (simulate_one, sample_params, model variants)
   config_msc_feedback.yaml    the 27 sampled parameter intervals and fixed settings
 notebooks/                    one self-contained Colab notebook per figure (see table below)
-R/                            R scripts for statistics and plotting (Fig. 2-6, S1, S2, S4, S5; see R/README.md)
+R/                            R scripts for statistics and plotting (see R/README.md)
+docs/                         README figure
 scripts/                      helper scripts (Middleton source workflow)
 ```
 
