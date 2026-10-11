@@ -10,6 +10,8 @@ MSC is a coarse-grained stochastic model of RNA-granule transport, synaptic enco
 
 *Conceptual overview of the MSC model and its stochastic update cycle.*
 
+**Interactive explorer:** [MSC material space](https://ayberkalpgyunesh.github.io/Material-Selective-Capture-MSC/explorer.html) — an in-browser walkthrough of the docking rule with a JavaScript port of the simulator. It is illustrative only and was not used for any result in the manuscript.
+
 All results are in-silico predictions. Nothing in this repository is a wet-lab measurement.
 
 ## Repository layout
