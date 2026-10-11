@@ -6,7 +6,7 @@ Code for the preprint
 
 MSC is a coarse-grained stochastic model of RNA-granule transport, synaptic encounter, physical docking, productive capture and delayed postsynaptic reinforcement. Docking depends on an activity tag, a slow material-memory tag and the material mismatch between granule and postsynaptic density.
 
-![MSC model overview](docs/msc_model_overview.png)
+
 
 *Conceptual framework and stochastic update cycle of the MSC model.*
 
