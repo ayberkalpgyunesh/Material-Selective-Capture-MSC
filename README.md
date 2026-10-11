@@ -15,7 +15,7 @@ model/
   msc_model_feedback.py       the simulator (simulate_one, sample_params, model variants)
   config_msc_feedback.yaml    the 27 sampled parameter intervals and fixed settings
 notebooks/                    one self-contained Colab notebook per figure (see table below)
-R/                            R scripts used for statistics and plotting of Fig. 4 and Fig. 5
+R/                            R scripts for statistics and plotting (Fig. 2-6, S1, S2, S4, S5; see R/README.md)
 scripts/                      helper scripts (Middleton source workflow)
 ```
 
@@ -25,7 +25,7 @@ scripts/                      helper scripts (Middleton source workflow)
 |---|---|---|---|
 | `01_Fig2_Fig3_S1_S5_docking_and_variants.ipynb` | Fig. 2, Fig. 3, S1 Fig, S5 Fig | 400 (+200 for all-variant pass) | several hours |
 | `02_Fig4_hysteresis.ipynb` | Fig. 4 | 100 | several hours |
-| `03_Fig5_anti_tautology.ipynb` | Fig. 5 (simulation data; statistics in `R/`) | 100 | several hours |
+| `03_Fig5_anti_tautology.ipynb` | Fig. 5 (simulation data; statistics in `R/figure5_final.r`) | 100 | several hours |
 | `04a_Fig6_S4_Middleton.ipynb` | Fig. 6, S4 Fig (Middleton, mouse) | 100 / 30 / 30 | hours |
 | `04b_Fig6_S4_Perez.ipynb` | Fig. 6, S4 Fig (Perez, rat) | 100 / 30 / 30 | hours |
 | `04c_Fig6_S4_Tushev.ipynb` | Fig. 6, S4 Fig (Tushev, rat isoforms) | 100 / 30 / 30 | hours |
