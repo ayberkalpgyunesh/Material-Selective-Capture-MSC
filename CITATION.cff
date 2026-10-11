@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the preprint below."
+title: "Material-Selective Capture (MSC) model code"
+authors:
+  - family-names: Gyunesh
+    given-names: Ayberk Alp
+    affiliation: "Biozentrum, University of Basel"
+license: MIT
+repository-code: "https://github.com/ayberkalpgyunesh/Material-Selective-Capture-MSC"
+version: "1.0.0"
+date-released: "2026-10-11"
+preferred-citation:
+  type: article
+  title: "A material-selective capture model predicts cargo-specific RNA-granule retention at active synapses"
+  authors:
+    - family-names: Gyunesh
+      given-names: Ayberk Alp
+  journal: "bioRxiv"
+  year: 2026

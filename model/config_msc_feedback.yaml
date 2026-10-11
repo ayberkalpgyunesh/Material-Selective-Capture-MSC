@@ -1,0 +1,41 @@
+# MSC feedback Colab configuration.
+# Biological/literature-like parameters are ranges; each seed samples one set.
+fixed:
+  dt: 2.0
+  T_total: 3600.0
+  activation_time: 120.0
+  activation_amp: 1.0
+  late_window: 600.0
+  S_threshold: 0.60
+  M_threshold: 0.50
+  D_material: 4
+  max_obs_per_run: 5000
+
+parameter_ranges:
+  L: [80.0, 180.0]
+  Nsyn: [18, 35]
+  granule_density: [0.60, 1.30]
+  v: [0.05, 0.30]
+  D: [0.005, 0.15]
+  p_switch: [0.002, 0.04]
+  epsilon: [0.20, 0.80]
+  h0: [0.0005, 0.0025]
+  beta_T: [2.0, 3.8]
+  beta_M: [1.0, 3.0]
+  ell_h: [1.0, 2.2]
+  ell_q_ratio: [0.35, 0.75]
+  alphaS: [0.025, 0.080]
+  q_min: [0.10, 0.25]
+  tau_T: [900.0, 3600.0]
+  tau_S: [1200.0, 7200.0]
+  delta_translation: [300.0, 900.0]
+  M_bas: [0.02, 0.12]
+  M_max: [0.85, 1.00]
+  k_M: [0.00015, 0.0012]
+  alphaM: [0.0015, 0.010]
+  K_M: [0.40, 0.65]
+  n_hill: [3, 6]
+  strong_fraction: [0.35, 0.60]
+  strong_sigma: [0.18, 0.42]
+  weak_shift: [1.2, 2.4]
+  weak_sigma: [0.65, 1.10]
