@@ -66,8 +66,8 @@ Original runs used Python 3.13, NumPy 2.1.3 and pandas 2.2.3 on Google Colab. Ot
 ## Protocol notes
 
 - **Fig. 4** uses a stateful stepped-drive protocol: the activity tag of the active synapse is clamped at each drive level (0.0 to 1.0 in steps of 0.1, up then down, 4,200 s per plateau), and the complete simulation state is carried between plateaus.
-- **S3 Fig, panel F** (Hill-coefficient hysteresis) uses a different protocol: each amplitude step is a separate `simulate_one` run in which only the final S and M of the previous step are carried over; granule positions, target vectors and the random stream are re-drawn, and activity is applied as a single pulse (amplitudes 0 to 1.6, saturating at 1). Its branch-separation values are therefore not directly comparable with Fig. 4E.
-- **S2 Fig** wraps the unmodified simulator. With drift disabled the wrapper is checked to be bit-identical to `simulate_one`.
+- **S Fig, panel F** (Hill-coefficient hysteresis) uses a different protocol: each amplitude step is a separate `simulate_one` run in which only the final S and M of the previous step are carried over; granule positions, target vectors and the random stream are re-drawn, and activity is applied as a single pulse (amplitudes 0 to 1.6, saturating at 1). Its branch-separation values are therefore not directly comparable with Fig. 4E.
+- **S Fig** wraps the unmodified simulator. With drift disabled the wrapper is checked to be bit-identical to `simulate_one`.
 
 ## Data
 
