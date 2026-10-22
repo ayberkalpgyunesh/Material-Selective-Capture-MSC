@@ -71,7 +71,7 @@ Original runs used Python 3.13, NumPy 2.1.3 and pandas 2.2.3 on Google Colab. Ot
 
 ## Data
 
-Large raw outputs (encounter-level parquet files, checkpoints) are not stored in this repository. The complete output bundles will avaliable on Zenodo: _DOI to be added_.
+Large raw outputs (encounter-level parquet files, checkpoints) are not stored in this repository. 
 
 ## Citation
 
