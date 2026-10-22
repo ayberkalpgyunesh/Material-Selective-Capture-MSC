@@ -2,7 +2,7 @@
 
 Code for the preprint
 
-> Gyunesh, A. A. *A material-selective capture model predicts cargo-specific RNA-granule retention at active synapses.* bioRxiv (2026). DOI: _to be added_
+> Gyunesh, A. A. *A material-selective capture model predicts cargo-specific RNA-granule retention at active synapses.
 
 MSC is a coarse-grained stochastic model of RNA-granule transport, synaptic encounter, physical docking, productive capture and delayed postsynaptic reinforcement. Docking depends on an activity tag, a slow material-memory tag and the material mismatch between granule and postsynaptic density.
 
