@@ -28,16 +28,23 @@ scripts/                      helper scripts (Middleton source workflow)
 
 ## Which notebook produces which figure
 
-| Notebook | Manuscript figures | Seeds | Approx. Colab runtime |
+| Notebook | Manuscript figures | Seeds / replicates | Approx. Colab runtime |
 |---|---|---|---|
-| `01_Fig2_Fig3_S1_S5_docking_and_variants.ipynb` | Fig. 2, Fig. 3, S1 Fig, S5 Fig | 400 (+200 for all-variant pass) | several hours |
-| `02_Fig4_hysteresis.ipynb` | Fig. 4 | 100 | several hours |
-| `03_Fig5_anti_tautology.ipynb` | Fig. 5 (simulation data; statistics in `R/figure5_final.r`) | 100 | several hours |
-| `04a_Fig6_S4_Middleton.ipynb` | Fig. 6, S4 Fig (Middleton, mouse) | 100 / 30 / 30 | hours |
-| `04b_Fig6_S4_Perez.ipynb` | Fig. 6, S4 Fig (Perez, rat) | 100 / 30 / 30 | hours |
-| `04c_Fig6_S4_Tushev.ipynb` | Fig. 6, S4 Fig (Tushev, rat isoforms) | 100 / 30 / 30 | hours |
-| `05_S2_material_dynamics.ipynb` | S2 Fig, Supplementary Note 3 | 100 (50 for panel F) | hours |
-| `06_S3_sensitivity.ipynb` | S3 Fig | 500 LHS sets x 4 | hours |
+| — | Fig. 1 (conceptual schematic; no simulation output) | — | — |
+| `01_Fig2_Fig3_S1_S5_docking_and_variants.ipynb` | Fig. 2, Fig. 3, Fig. S1, Fig. S5 | 400 matched parameter seeds per variant (Fig. 2: 2,000,000 encounter observations, 6,079 docking events) [+ ERKLÄREN ODER STREICHEN: 200 seeds for …] | several hours |
+| `02_Fig4_hysteresis.ipynb` | Fig. 4 | 100 parameter seeds; 11 plateaus per branch, 4,200 s each | several hours |
+| `03_Fig5_anti_tautology.ipynb` | Fig. 5 (simulation data; statistics in `R/Fig5_anti_tautology.R`) | 100 seeds; 1,000,000 sampled encounters per variant | several hours |
+| `04a_Fig6_S4_Middleton.ipynb` | Fig. 6, Fig. S4 (Middleton, mouse, gene level) | 250 matched pairs (20,000 bootstraps); 100 / 30 / 30 seeds (relaxation time / elastic modulus / mobile fraction); 30 seeds per scaling condition (Fig. S4E) | hours |
+| `04b_Fig6_S4_Perez.ipynb` | Fig. 6, Fig. S4 (Perez, rat, gene level) | as 04a | hours |
+| `04c_Fig6_S4_Tushev.ipynb` | Fig. 6, Fig. S4 (Tushev, rat, 3′UTR isoforms) | as 04a | hours |
+| [SKRIPTNAME] | Fig. 6 / Fig. S4 assembly across the three datasets | — | minutes |
+| `05_S2_material_dynamics.ipynb` | Fig. S2, Supplementary Note 3 | 100 parameter seeds (panel B docking: 99 finite seeds; panel F: 50) | hours |
+| `06_S3_sensitivity.ipynb` | Fig. S3 | A–C: 500 Latin-hypercube sets × 4 replicates; D–E: 30 replicates per value; F: 15 replicates per Hill coefficient | hours |
+| `MSC-Material-Space` (`index.html`) | Interactive explainer; not a manuscript figure | browser RNG (values differ from Python runs) | seconds |
+
+Notebooks 01–04 and 06 require `model/msc_model_feedback.py` and `model/config_msc_feedback.yaml`;
+notebook 05 additionally requires the dynamic-material wrapper `model/[WRAPPER].py`.
+Dataset-specific inputs are listed below.
 
 Each notebook asks you to upload `model/msc_model_feedback.py` and `model/config_msc_feedback.yaml` (plus dataset-specific inputs, see below), runs top to bottom, and downloads one ZIP bundle. Every bundle contains a `MANIFEST_*.json` with SHA-256 hashes of all inputs and outputs and a `10_r_input/` (or `04_r_input/`, `05_r_input/`) folder with the tables used for plotting.
 
