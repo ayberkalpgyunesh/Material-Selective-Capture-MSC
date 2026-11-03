@@ -37,7 +37,7 @@ scripts/                      helper scripts (Middleton source workflow)
 | `04a_Fig6_S4_Middleton.ipynb` | Fig. 6, Fig. S4 (Middleton, mouse, gene level) | 250 matched pairs (20,000 bootstraps); 100 / 30 / 30 seeds (relaxation time / elastic modulus / mobile fraction); 30 seeds per scaling condition (Fig. S4E) | hours |
 | `04b_Fig6_S4_Perez.ipynb` | Fig. 6, Fig. S4 (Perez, rat, gene level) | as 04a | hours |
 | `04c_Fig6_S4_Tushev.ipynb` | Fig. 6, Fig. S4 (Tushev, rat, 3′UTR isoforms) | as 04a | hours |
-| [SKRIPTNAME] | Fig. 6 / Fig. S4 assembly across the three datasets | — | minutes |
+| MSC_Figure6_Middleton_LocalizationConfidence_100seed.ipynb | Fig. 6 / Fig. S4 assembly across the three datasets -foe 04a |
 | `05_S2_material_dynamics.ipynb` | Fig. S2, Supplementary Note 3 | 100 parameter seeds (panel B docking: 99 finite seeds; panel F: 50) | hours |
 | `06_S3_sensitivity.ipynb` | Fig. S3 | A–C: 500 Latin-hypercube sets × 4 replicates; D–E: 30 replicates per value; F: 15 replicates per Hill coefficient | hours |
 | `MSC-Material-Space` (`index.html`) | Interactive explainer; not a manuscript figure | browser RNG (values differ from Python runs) | seconds |
