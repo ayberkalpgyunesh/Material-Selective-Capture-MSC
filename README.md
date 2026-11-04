@@ -82,7 +82,7 @@ Large raw outputs (encounter-level parquet files, checkpoints) are not stored in
 
 ## Citation
 
-If you use this code, please cite the preprint (see `CITATION.cff`).
+If you use this code, please cite the paper (see `CITATION.cff`).
 
 ## License
 
