@@ -1,6 +1,6 @@
 # Material-Selective Capture (MSC)
 
-Code for the preprint
+
 
 > Gyunesh, A. A. *A material-selective capture model predicts cargo-specific RNA-granule retention at active synapses.
 
