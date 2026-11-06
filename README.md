@@ -31,7 +31,7 @@ scripts/                      helper scripts (Middleton source workflow)
 | Notebook | Manuscript figures | Seeds / replicates | Approx. Colab runtime |
 |---|---|---|---|
 | — | Fig. 1 (conceptual schematic; no simulation output) | — | — |
-| `01_Fig2_Fig3_S1_S5_docking_and_variants.ipynb` | Fig. 2, Fig. 3, Fig. S1, Fig. S5 | 400 matched parameter seeds per variant (Fig. 2: 2,000,000 encounter observations, 6,079 docking events) [+ ERKLÄREN ODER STREICHEN: 200 seeds for …] | several hours |
+| `01_Fig2_Fig3_S1_S5_docking_and_variants.ipynb` | Fig. 2, Fig. 3, Fig. S1, Fig. S5 | 400 matched parameter seeds per variant (Fig. 2: 2,000,000 encounter observations, 6,079 docking events)  | several hours |
 | `02_Fig4_hysteresis.ipynb` | Fig. 4 | 100 parameter seeds; 11 plateaus per branch, 4,200 s each | several hours |
 | `03_Fig5_anti_tautology.ipynb` | Fig. 5 (simulation data; statistics in `R/Fig5_anti_tautology.R`) | 100 seeds; 1,000,000 sampled encounters per variant | several hours |
 | `04a_Fig6_S4_Middleton.ipynb` | Fig. 6, Fig. S4 (Middleton, mouse, gene level) | 250 matched pairs (20,000 bootstraps); 100 / 30 / 30 seeds (relaxation time / elastic modulus / mobile fraction); 30 seeds per scaling condition (Fig. S4E) | hours |
